@@ -38,3 +38,24 @@ function palindrome(word) {
     return result === resultReverse ? "E' PALINDROMA!!" : "NON E' PALINDROMA!!";
 }
 
+
+
+// funzione gioco pari o dispari
+function pariEDispari(choice, play1, play2) {
+
+    // Sommiamo i due numeri 
+    let somma = play1 + play2;
+
+    let risutltato = numeroPariODispari(somma);
+
+    // Dichiariamo chi ha vinto.
+    if (choice === "pari" && risutltato === "pari") {
+        console.log("HAI VINTO");
+
+    } else {
+        
+        console.log("HAI PERSO");
+    }
+    
+}
+
