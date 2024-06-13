@@ -13,8 +13,21 @@ console.log("La tua giocata è: ", userPlay);
 const computerPlay = generaNumeroRandom(1,5);
 console.log("La giocata del computer è: ", computerPlay);
 
-pariEDispari(userChoice, userPlay, computerPlay);
+let esito = giocoPariEDispari(userChoice, userPlay, computerPlay);
+console.log(esito);
 
+// funzione gioco pari o dispari
+function giocoPariEDispari(choice, play1, play2) {
+
+    // Sommiamo i due numeri 
+    let somma = play1 + play2;
+
+    let risutltato = numeroPariODispari(somma);
+    
+    return choice === risutltato ? "HAI VINTO" : "HAI PERSO";
+    
+
+}
 
 
 
